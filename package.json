@@ -1,0 +1,59 @@
+{
+  "name": "parcel-plugin-rcs",
+  "version": "0.0.0",
+  "description": "[![Build Status](https://travis-ci.com/JPeer264/parcel-plugin-rcs.svg?branch=master)](https://travis-ci.com/JPeer264/parcel-plugin-rcs)",
+  "main": "index.js",
+  "scripts": {
+    "lint": "eslint index.js",
+    "test": "eslint index.js"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "*.{js}": [
+      "eslint --fix",
+      "git add"
+    ]
+  },
+  "keywords": [
+    "rcs",
+    "rename",
+    "plugin",
+    "css",
+    "minify",
+    "rename",
+    "selectors",
+    "shrink",
+    "classes",
+    "compress",
+    "styles",
+    "munch"
+  ],
+  "author": "Jan Peer Stöcklmair <janpeer264@©mail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "chalk": "^3.0.0",
+    "ora": "^4.0.3",
+    "parcel-bundler": "^1.12.4",
+    "pretty-ms": "^5.1.0",
+    "rename-css-selectors": "^3.*"
+  },
+  "devDependencies": {
+    "eslint": "^6.7.2",
+    "eslint-config-airbnb-base": "^14.0.0",
+    "eslint-plugin-import": "^2.18.2",
+    "husky": "^3.1.0",
+    "lint-staged": "^9.5.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JPeer264/parcel-plugin-rcs.git"
+  },
+  "bugs": {
+    "url": "https://github.com/JPeer264/parcel-plugin-rcs/issues"
+  },
+  "homepage": "https://github.com/JPeer264/parcel-plugin-rcs#readme"
+}
